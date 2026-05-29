@@ -128,23 +128,22 @@
   .camp-card .row span:last-child{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.03em}
   .camp-card .btn{width:100%;margin-top:26px}
 
-  /* ===== programs : editorial light section, numbered rows ===== */
-  .lite{background:var(--paper);color:var(--paper-ink)}
-  .lite .sec-head h2{color:var(--paper-ink)}
+  /* ===== programs : numbered editorial rows (dark) ===== */
+  .lite{background:var(--ink-2);color:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .lite-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px;flex-wrap:wrap}
-  .lite-head h2{font-size:clamp(2.4rem,5.5vw,4.6rem);color:var(--paper-ink);margin-top:16px}
+  .lite-head h2{font-size:clamp(2.4rem,5.5vw,4.6rem);color:var(--white);margin-top:16px}
   .lite-head .o{color:var(--orange)}
-  .lite-head .aside{font-family:'Manrope',sans-serif;font-weight:500;color:#5b6068;max-width:34ch;font-size:.98rem;text-transform:none;letter-spacing:0;line-height:1.6}
-  .prog-rows{border-top:1px solid rgba(0,0,0,.14)}
-  .prow{display:grid;grid-template-columns:64px 1fr auto;gap:34px;align-items:center;padding:30px 12px;border-bottom:1px solid rgba(0,0,0,.14);position:relative;transition:padding .4s var(--ease)}
+  .lite-head .aside{font-family:'Manrope',sans-serif;font-weight:500;color:var(--mut);max-width:34ch;font-size:.98rem;text-transform:none;letter-spacing:0;line-height:1.6}
+  .prog-rows{border-top:1px solid var(--line)}
+  .prow{display:grid;grid-template-columns:64px 1fr auto;gap:34px;align-items:center;padding:30px 12px;border-bottom:1px solid var(--line);position:relative;transition:padding .4s var(--ease),background .35s}
   .prow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--orange);transition:width .4s var(--ease);z-index:0}
   .prow>*{position:relative;z-index:1}
-  .prow .pnum{font-family:'Anton',sans-serif;font-size:1.5rem;color:rgba(0,0,0,.28);transition:color .35s}
+  .prow .pnum{font-family:'Anton',sans-serif;font-size:1.5rem;color:rgba(255,255,255,.25);transition:color .35s}
   .prow .ph{display:flex;flex-direction:column;gap:7px}
-  .prow h3{font-family:'Anton',sans-serif;font-size:clamp(1.55rem,3.6vw,2.7rem);color:var(--paper-ink);transition:color .35s,transform .4s var(--ease);line-height:.98}
-  .prow p{color:#5b6068;font-weight:500;max-width:62ch;font-size:.98rem}
-  .prow .arrow{font-family:'Anton';font-size:1.8rem;color:var(--paper-ink);transition:transform .4s var(--ease),color .35s;line-height:1}
-  .prow:hover{padding-left:30px}
+  .prow h3{font-family:'Anton',sans-serif;font-size:clamp(1.55rem,3.6vw,2.7rem);color:var(--white);transition:color .35s,transform .4s var(--ease);line-height:.98}
+  .prow p{color:var(--mut);font-weight:500;max-width:62ch;font-size:.98rem}
+  .prow .arrow{font-family:'Anton';font-size:1.8rem;color:var(--white);transition:transform .4s var(--ease),color .35s;line-height:1}
+  .prow:hover{padding-left:30px;background:rgba(255,255,255,.025)}
   .prow:hover::before{width:5px}
   .prow:hover .pnum,.prow:hover h3,.prow:hover .arrow{color:var(--orange)}
   .prow:hover .arrow{transform:translate(6px,-6px)}
